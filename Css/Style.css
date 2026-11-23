@@ -1,0 +1,334 @@
+:root {
+    --sage-green: #95A692;
+    --orange-brown: #AD5E0A;
+    --light-beige: #DAD4B2;
+    --dark-brown: #632A08;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--light-beige);
+    color: var(--dark-brown);
+    line-height: 1.7;
+}
+
+/* Header */
+
+.page-title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--light-beige);
+    background-color: var(--dark-brown);
+    padding: 40px 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navigatie */
+
+.navigation {
+    background-color: var(--sage-green);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 18px 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background-color: var(--orange-brown);
+}
+
+/* Content */
+
+.section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: var(--orange-brown);
+    border-bottom: 4px solid var(--sage-green);
+    padding-bottom: 10px;
+}
+
+.section p {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+#text
+{
+    padding: 10px;
+}
+/* Footer */
+
+footer {
+    background-color: var(--dark-brown);
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.footer-text {
+    color: var(--light-beige);
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+/* Responsief */
+
+@media (max-width: 768px) {
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .section {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.logboek-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.logboek-table th {
+    background-color: var(--dark-brown);
+    color: var(--light-beige);
+    padding: 18px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.logboek-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+.logboek-table tr:nth-child(even) {
+    background-color: rgba(149, 166, 146, 0.08);
+}
+
+.logboek-table tr:hover {
+    background-color: rgba(173, 94, 10, 0.08);
+}
+
+.logboek-table td:first-child {
+    font-weight: bold;
+    color: var(--orange-brown);
+    min-width: 140px;
+}
+
+.logboek-table td:nth-child(2) {
+    font-weight: 600;
+    color: var(--dark-brown);
+}
+
+.status-tag {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 25px;
+    background-color: var(--sage-green);
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.status-tag:hover {
+    background-color: var(--orange-brown);
+    transition: 0.3s;
+}
+
+/* ============================= */
+/* ONTWIKKELING PAGINA */
+/* ============================= */
+
+/* Algemene vragenblokken */
+
+.question-block {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: rgba(149, 166, 146, 0.12);
+    border-left: 5px solid var(--sage-green);
+    border-radius: 8px;
+}
+
+.question-block h3 {
+    color: var(--dark-brown);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.answer-text {
+    line-height: 1.8;
+}
+
+/* Rollen */
+
+.role-block {
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.role-title {
+    font-size: 1.5rem;
+    color: var(--dark-brown);
+    background-color: var(--sage-green);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* OLR onderdelen */
+
+.olr-item {
+    background-color: #fafafa;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+}
+
+.olr-item h4 {
+    color: var(--orange-brown);
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.olr-item p {
+    margin-bottom: 10px;
+}
+
+.olr-item ul {
+    margin: 10px 0 10px 30px;
+}
+
+/* Reflectie */
+
+.reflection-block {
+    padding: 20px;
+    margin: 15px 0;
+    background-color: rgba(149, 166, 146, 0.12);
+    border-radius: 8px;
+}
+
+.reflection-block h4 {
+    color: var(--orange-brown);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.reflection-block p {
+    line-height: 1.8;
+}
+
+/* Activiteiten */
+
+.activity-card {
+    padding: 22px;
+    margin: 18px 0;
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    border-left: 5px solid var(--orange-brown);
+    transition: 0.3s;
+}
+
+.activity-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.activity-card h4 {
+    color: var(--orange-brown);
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+}
+
+.activity-card p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.activity-card strong {
+    color: var(--dark-brown);
+}
+
+/* Responsief voor kleinere schermen */
+
+@media (max-width: 768px) {
+
+    .question-block {
+        padding: 18px;
+    }
+
+    .role-title {
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+
+    .olr-item {
+        padding: 15px;
+    }
+
+    .reflection-block {
+        padding: 15px;
+    }
+
+    .activity-card {
+        padding: 16px;
+    }
+}
